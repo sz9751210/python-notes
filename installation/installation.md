@@ -8,43 +8,43 @@
 網址:[Python](https://www.python.org/downloads/)
 
 點擊Download
-![Imgur](https://i.imgur.com/RA2A4Ml.png)
+![Imgur](./assets/RA2A4Ml.png)
 
 選擇windows的可執行安裝檔，目前大多都以64位元為主
-![Imgur](https://i.imgur.com/cgLO8Dy.png)
+![Imgur](./assets/cgLO8Dy.png)
 
 
 ## 2.安裝過程
 1. 
-![Imgur](https://i.imgur.com/7yCCYzw.png)
+![](./assets/7yCCYzw.png)
 
 2.
-![Imgur](https://i.imgur.com/HKKkiqi.png)
+![Imgur](./assets/HKKkiqi.png)
 
 3.
-![Imgur](https://i.imgur.com/HFpzEbt.png)
+![Imgur](./assets/HFpzEbt.png)
 
 4.
-![Imgur](https://i.imgur.com/A0eGXDr.png)
+![Imgur](./assets/A0eGXDr.png)
 
 ## 3.檢查環境
 1.
-![Imgur](https://i.imgur.com/iXJaRzA.png)
+![Imgur](./assets/iXJaRzA.png)
 
 2.
-![Imgur](https://i.imgur.com/kDS5kL3.png)
+![Imgur](./assets/kDS5kL3.png)
 
 3.
-![Imgur](https://i.imgur.com/uBh0Qiv.png)
+![Imgur](./assets/uBh0Qiv.png)
 
 4.
-![Imgur](https://i.imgur.com/OOASAmp.png)
+![Imgur](./assets/OOASAmp.png)
 
 5.
-![Imgur](https://i.imgur.com/dq9cLrN.png)
+![Imgur](./assets/dq9cLrN.png)
 
 6.
-![Imgur](https://i.imgur.com/CVpGnGo.png)
+![Imgur](./assets/CVpGnGo.png)
 
 7.
-![Imgur](https://i.imgur.com/nrRUX1M.png)
+![Imgur](./assets/nrRUX1M.png)
