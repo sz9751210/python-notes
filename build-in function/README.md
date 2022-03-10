@@ -37,25 +37,39 @@
 |    int()           |     將任何型態轉為整數            |
 |   isinstance()            |    檢查指定對象是否屬於指定類型，返回布林值             |
 |    issubclass()           |     檢查指定的類是否為指定對象的子類，返回布林值            |
-|      iter()         |                 |
-|               |                 |
-|               |                 |
-|               |                 |
-|               |                 |
-|               |                 |
-|               |                 |
-|               |                 |
-|               |                 |
-|               |                 |
-|               |                 |
-|               |                 |
-|               |                 |
-|               |                 |
-|               |                 |
-|               |                 |
-|               |                 |
-|               |                 |
-|               |                 |
+|      iter()         |    建立一個迭代物件             |
+|     len()          |       返回對象的長度          |
+|   list()            |          建立一個list物件       |
+|     locals()          |  以字典形式返回當前位置的全部局部變量               |
+|     map()          |     透過指定的函數，應用於每個迭代的項目，並返回指定的迭代器            |
+|     max()          |       返回指定迭代器的最大值          |
+|   memoryview()            |                 |
+|     min()          |    返回指定迭代器的最小值             |
+|     next()          |    回傳迭代器的下一個值             |
+|     object()          |                 |
+|    oct()           |    將十進位轉為八進位             |
+|    open()           |     打開文件，並返回文件對象            |
+|    ord()           |   返回指定unicode編碼的數字              |
+|   pow()            |  返回指定值的次方               |
+|   print()            |  印出指定的消息到螢幕               |
+|   property()            |                 |
+|   range()            |      指定一個數字序列          |
+|   repr()            |                 |
+|  reversed()             |   以倒序返回迭代對象              |
+|    round()           |      對數字四捨五入           |
+|      set()         |       建立一個集合物件         |
+|     setattr()          |   設定指定對象的指定屬性              |
+|      slice()         |     建立一個切片物件            |
+|        sorted()       |      回傳可迭代對象的排序後列表           |
+|  staticmethod()             |    將方法轉為靜態方法             |
+|   str()            |    將指定的值轉為字串             |
+|  sum()             |    將可迭代對象進行加總並返回佳總數值             |
+|   super()            |                 |
+|   tuple()            |   建立一個元組物件              |
+|     type()          |        返回指定物件的類型         |
+|       vars()        |   以字典形式返回              |
+|       zip()        |                 |
+
 - abs()
 
 ```python
@@ -333,3 +347,297 @@ class myObj(myAge):
 x = issubclass(myObj, myAge)
 ```
 > isinstance()
+
+- iter()
+
+```python 
+x = iter(["apple", "banana", "cherry"])
+print(next(x)) # apple
+print(next(x)) # banana
+print(next(x)) # cherry
+```
+> reversed()
+
+- len()
+
+```python
+mylist = ["apple", "banana", "cherry"]
+x = len(mylist)
+print(x) # 3
+```
+
+- list()
+
+```python
+x = list(('apple', 'banana', 'cherry'))
+
+print(x) # ['apple', 'banana', 'cherry']
+print(type(x)) # <class 'list'>
+```
+
+- locals()
+
+```python
+def runoob(arg):    # 两个局部变量：arg、z
+     z = 1
+     print (locals())
+     
+runoob(4) # {'arg': 4, 'z': 1}
+```
+
+- map()
+
+```python
+# 將每個item回傳成長度
+def myfunc(a):
+  return len(a)
+
+x = map(myfunc, ('apple', 'banana', 'cherry'))
+
+print(x) # <map object at 0x2aefd971d130>
+print(list(x)) # [5, 6, 6]
+```
+
+- max()
+
+```python
+a = (1, 5, 3, 9)
+x = max(a)
+print(x) # 9
+```
+
+> min()
+
+- memoryview()
+- min()
+
+```python
+a = (1, 5, 3, 9)
+x = min(a)
+print(x) # 1
+```
+
+> max()
+
+- next()
+
+```python
+mylist = iter(["apple", "banana", "cherry"])
+x = next(mylist)
+print(x) # apple
+y = next(mylist)
+print(y) # banana
+z = next(mylist)
+print(z) # cherry
+```
+
+- object()
+- oct()
+
+```python
+x = oct(12)
+print(x) # 0o14
+```
+
+- open()
+
+```python
+語法：open(file, mode)
+
+f = open("demofile.txt", "r")
+print(f.read()) # helloworld
+```
+
+- ord()
+
+```python
+x = ord("h")
+print(x) # 104
+```
+
+- pow()
+
+```python
+x = pow(4, 3)
+print(x) # 64 = 4 * 4 * 4
+```
+
+- print()
+
+```python
+語法：print(object(s), sep=separator, end=end, file=file, flush=flush)
+
+print("Hello World")
+```
+
+- property()
+
+- range()
+
+```python
+語法：range(start, stop, step)
+
+- ex1
+x = range(3)
+for n in x:
+  print(n)
+
+# output
+0
+1
+2
+
+- ex2
+x = range(3, 10, 2)
+for n in x:
+  print(n)
+
+# output
+3
+5
+7
+9
+```
+
+- repr()
+
+- reversed()
+
+```python
+- 語法：reversed(sequence)
+
+- ex
+alph = ["a", "b", "c", "d"]
+ralph = reversed(alph)
+for x in ralph:
+  print(x)
+
+# output
+d
+c
+b
+a
+
+- 相關
+iter()
+list.reverse()
+```
+
+- round()
+
+```python
+- 語法：round(number, digits)
+
+- ex
+x = round(5.76543, 2)
+print(x) # 5.77
+```
+- set()
+
+```python
+- 語法：set(iterable)
+
+- ex
+x = set(("apple", "banana", "cherry"))
+print(x) # {'banana', 'cherry', 'apple'}
+```
+- setattr()
+
+```python
+- 語法：setattr(object, attribute, value)
+
+- ex
+class Person:
+  name = "John"
+  age = 36
+  country = "Norway"
+
+x = setattr(Person, 'age', 40)
+
+print(x) # 40
+
+- 相關
+delattr()
+getattr()
+hasattr()
+```
+- slice()
+
+```python
+- 語法：slice(start, end, step)
+
+- ex1
+a = ("a", "b", "c", "d", "e", "f", "g", "h")
+x = slice(2)
+print(a[x]) # ('a', 'b')
+
+- ex2
+a = ("a", "b", "c", "d", "e", "f", "g", "h")
+x = slice(0, 8, 3)
+print(a[x]) # ('a', 'd', 'g')
+```
+
+- sorted()
+
+```python
+- 語法：sorted(iterable, key=key, reverse=reverse)
+
+- ex
+a = (1, 11, 2)
+x = sorted(a)
+print(x) # [1, 2, 11]
+```
+> 無法對同時包含字串以及數值的列表進行排序
+
+- staticmethod()
+- str
+
+```python
+- 語法：str(object, encoding=encoding, errors=errors)
+
+- ex
+x = str(3.5)
+print(x) # 3.5
+print(type(x)) # <class 'str'>
+```
+
+
+- sum()
+
+```python
+- 語法：sum(iterable, start)
+
+- ex
+a = (1, 2, 3, 4, 5)
+x = sum(a)
+print(x) # 15
+```
+- super()
+- tuple()
+
+```python
+- 語法：tuple(iterable)
+
+- ex
+x = tuple(("apple", "banana", "cherry"))
+print(x) # ('apple', 'banana', 'cherry')
+print(type(x)) # <class 'tuple'>
+
+```
+> 不能更改或刪除元組中的項目
+- type()
+
+```python
+- 語法：type(object, bases, dict)
+
+- ex
+a = ('apple', 'banana', 'cherry')
+b = "Hello World"
+c = 33
+
+print(type(a)) # <class 'tuple'>
+print(type(b)) # <class 'str'>
+print(type(c)) # <class 'int'>
+```
+- vars()
+- zip()
