@@ -1,4 +1,4 @@
-E# python 基礎
+# python 基礎
 
 ## Python 基本語法
 
